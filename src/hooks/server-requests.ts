@@ -2,6 +2,7 @@ import { Message } from '../types/message'
 import { mockUsers } from '../assets/mockUsers' // todo: remove this line after server implementation
 import { mockMessages } from '../assets/mockMessages'
 import {} from './server'
+import { User } from '../types/user'
 
 //const endpoint = '../assets/' // todo: add endpoint (server) address (starting with http://)
 const endpoint = 'http://localhost:5371'
@@ -29,7 +30,7 @@ export async function getMessages(): Promise<Message[]> {
 /**
  * GET request to get the full list of users - id + name
  **/
-export async function getUsers(): Promise<void[]> {
+export async function getUsers(): Promise<User[]> {
   // todo: replace this with fetch to get the user list from the server
   // const { mockUsers } = await import(`${endpoint}/mockUsers`)
   // return mockUsers

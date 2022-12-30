@@ -1,6 +1,8 @@
 import express from 'express'
-import { mockMessages, mockUserDetails } from '../assets/'
-import { Message, User } from '../types/'
+import { mockMessages } from '../assets/mockMessages'
+import { mockUserDetails } from '../assets/mockUserDetails'
+import { Message } from '../types/message'
+import { User } from '../types/user'
 
 const app = express()
 const port = 5371
